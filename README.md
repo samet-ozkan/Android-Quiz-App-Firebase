@@ -12,8 +12,8 @@ Android multiplayer quiz app using Firebase real-time database.
 <h5>Oyunun mantığı:</h5>
 <p>Soru havuzundan rastgele 10 soru çekilir. Bu soruların beş tanesi 1.oyuncuya, diğer beş tanesi de 2.oyuncuya sorulur. Oyunun sonunda doğru cevap sayısı fazla olan oyuncu, oyunu kazanır. Oyuncuların doğru cevap sayıları eşitse oyun beraberedir.</p>
 
-<h5>Hamle sırası:</h5>
-<p>Hamle sırası 1.oyuncudan başlar ve 2.oyuncudan devam eder. Hamle yapmak için oyuncuya tanınan süre 30 saniyedir. Eğer oyuncu, 30 saniye içerisinde soruyu yanıtlamazsa hamle sırası rakip oyuncuya geçer.</p>
+<h5>Soru cevaplama sırası:</h5>
+<p>Soru cevaplama sırası 1.oyuncudan başlar ve 2.oyuncudan devam eder. Soruyu cevaplamak için oyuncuya tanınan süre 30 saniyedir. Eğer oyuncu, 30 saniye içerisinde soruyu yanıtlamazsa o sorudan tik alamaz ve rakip oyuncunun sorusuyla oyun devam eder.</p>
 
 <h5>Oyun sonu:</h5>
 <p>Oyuncu galibiyet durumunda 20 puan, beraberlik durumunda 10 puan kazanır. Mağlubiyet durumunda ise oyuncu puan kazanamaz.</p>
