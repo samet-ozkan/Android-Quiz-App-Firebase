@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".GameResults">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/header"
+        app:layout_constraintBottom_toTopOf="@id/guideLine3"
+        app:layout_constraintEnd_toEndOf="@id/guideLine2"
+        app:layout_constraintStart_toStartOf="@id/guideLine1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/body"
+        app:layout_constraintBottom_toTopOf="@id/guideLine5"
+        app:layout_constraintEnd_toEndOf="@id/guideLine2"
+        app:layout_constraintStart_toStartOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/guideLine3" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/body"
+        app:layout_constraintBottom_toTopOf="@id/guideLine4"
+        app:layout_constraintEnd_toEndOf="@id/guideLine2"
+        app:layout_constraintStart_toStartOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/guideLine5" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/guideLine3"
+        app:layout_constraintLeft_toLeftOf="@id/guideLine1"
+        app:layout_constraintRight_toRightOf="@+id/guideLine2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/gameResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_result"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/guideLine3"
+        app:layout_constraintLeft_toLeftOf="@+id/guideLine1"
+        app:layout_constraintRight_toRightOf="@id/guideLine2"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+
+    <ImageView
+        android:id="@+id/p1_avatar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/avatar"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toTopOf="@id/p1_username"
+        app:layout_constraintEnd_toStartOf="@+id/p2_avatar"
+        app:layout_constraintStart_toStartOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/p1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/p1_avatar"
+        app:layout_constraintEnd_toStartOf="@+id/player2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideLine1"
+        app:layout_constraintTop_toTopOf="@id/guideLine3"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <TextView
+        android:id="@+id/p1_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/p1_username_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/finalScore"
+        app:layout_constraintEnd_toStartOf="@+id/p2_username"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@+id/p1_avatar" />
+
+    <ImageView
+        android:id="@+id/p2_avatar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/avatar"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toTopOf="@id/p2_username"
+        app:layout_constraintEnd_toStartOf="@+id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/p1_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/p2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/p2_avatar"
+        app:layout_constraintEnd_toStartOf="@+id/guideLine2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/player1"
+        app:layout_constraintTop_toTopOf="@id/guideLine3"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <TextView
+        android:id="@+id/p2_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/p2_username_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/finalScore"
+        app:layout_constraintEnd_toStartOf="@+id/guideLine2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/p1_username"
+        app:layout_constraintTop_toBottomOf="@+id/p1_avatar" />
+
+    <TextView
+        android:id="@+id/finalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:text="@string/final_score"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/guideLine5"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@+id/p1_username"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <TextView
+        android:id="@+id/p1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/p1_score"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/guideLine5"
+        app:layout_constraintEnd_toStartOf="@id/brace"
+        app:layout_constraintStart_toEndOf="@+id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/finalScore" />
+
+    <TextView
+        android:id="@+id/brace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/colon"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/guideLine5"
+        app:layout_constraintEnd_toStartOf="@id/p2_score"
+        app:layout_constraintStart_toEndOf="@id/p1_score"
+        app:layout_constraintTop_toBottomOf="@id/finalScore" />
+
+    <TextView
+        android:id="@+id/p2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/p2_score"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/guideLine5"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/brace"
+        app:layout_constraintTop_toBottomOf="@id/finalScore" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/level_text"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/levelBar"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/guideLine5" />
+
+    <ProgressBar
+        android:id="@+id/levelBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@id/point"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/level" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/point_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/win"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/levelBar" />
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/win_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/guideLine4"
+        app:layout_constraintEnd_toStartOf="@id/lose"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/point" />
+
+    <TextView
+        android:id="@+id/lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lose_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@id/guideLine4"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/win"
+        app:layout_constraintTop_toBottomOf="@id/point" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mainMenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:text="@string/main_menu"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/guideLine4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

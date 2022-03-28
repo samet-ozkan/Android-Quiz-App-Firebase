@@ -1,0 +1,195 @@
+{
+  "Questions": {
+    "Question1": {
+      "answerChoices": [
+        "0",
+        "correctAnswer1",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer1",
+      "question": "question1"
+    },
+    "Question10": {
+      "answerChoices": [
+        "0",
+        "1",
+        "correctAnswer10",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer10",
+      "question": "question10"
+    },
+    "Question11": {
+      "answerChoices": [
+        "correctAnswer11",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer11",
+      "question": "question11"
+    },
+    "Question12": {
+      "answerChoices": [
+        "0",
+        "1",
+        "2",
+        "correctAnswer12"
+      ],
+      "correctAnswer": "correctAnswer12",
+      "question": "question12"
+    },
+    "Question13": {
+      "answerChoices": [
+        "0",
+        "correctAnswer13",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer13",
+      "question": "question13"
+    },
+    "Question14": {
+      "answerChoices": [
+        "0",
+        "1",
+        "correctAnswer14",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer14",
+      "question": "question14"
+    },
+    "Question15": {
+      "answerChoices": [
+        "correctAnswer15",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer15",
+      "question": "question15"
+    },
+    "Question2": {
+      "answerChoices": [
+        "0",
+        "1",
+        "2",
+        "correctAnswer2"
+      ],
+      "correctAnswer": "correctAnswer2",
+      "question": "question2"
+    },
+    "Question3": {
+      "answerChoices": [
+        "0",
+        "correctAnswer3",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer3",
+      "question": "question3"
+    },
+    "Question4": {
+      "answerChoices": [
+        "correctAnswer4",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer4",
+      "question": "question4"
+    },
+    "Question5": {
+      "answerChoices": [
+        "0",
+        "1",
+        "2",
+        "correctAnswer5"
+      ],
+      "correctAnswer": "correctAnswer5",
+      "question": "question5"
+    },
+    "Question6": {
+      "answerChoices": [
+        "correctAnswer6",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer6",
+      "question": "question6"
+    },
+    "Question7": {
+      "answerChoices": [
+        "0",
+        "correctAnswer7",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer7",
+      "question": "question7"
+    },
+    "Question8": {
+      "answerChoices": [
+        "0",
+        "1",
+        "2",
+        "correctAnswer8"
+      ],
+      "correctAnswer": "correctAnswer8",
+      "question": "question8"
+    },
+    "Question9": {
+      "answerChoices": [
+        "0",
+        "correctAnswer9",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "correctAnswer9",
+      "question": "question9"
+    }
+  },
+  "Rooms": {
+    "FullRooms": {
+      "-MzG8cfISYh__9n4QuqR": {
+        "chosenAnswer": "correctAnswer7",
+        "currentQuestion": "Question7",
+        "index": 9,
+        "player1": "9nNgD7fv3EUJX3rz1nPOB2JmTMo1",
+        "player2": "Wy9J13ERhMRI6tclx2tItFPuTQg2",
+        "questions": [
+          "Question9",
+          "Question10",
+          "Question1",
+          "Question4",
+          "Question2",
+          "Question3",
+          "Question5",
+          "Question8",
+          "Question6",
+          "Question7"
+        ]
+      }
+    }
+  },
+  "Users": {
+    "9nNgD7fv3EUJX3rz1nPOB2JmTMo1": {
+      "currentRoom": "-MzG8cfISYh__9n4QuqR",
+      "email": "leo@mail.com",
+      "lose": 6,
+      "point": 410,
+      "username": "Leo",
+      "win": 19
+    },
+    "Wy9J13ERhMRI6tclx2tItFPuTQg2": {
+      "currentRoom": "-MzG8cfISYh__9n4QuqR",
+      "email": "jack@mail.com",
+      "lose": 13,
+      "point": 350,
+      "username": "Jack",
+      "win": 15
+    }
+  }
+}
