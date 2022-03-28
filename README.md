@@ -1,5 +1,7 @@
 # Android-Quiz-App-Firebase
 Android multiplayer quiz app using Firebase real-time database.
+<p>JSON file: <a href="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/quiz-app.json">Click here</a></p>
+<p><img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/quizApp.gif" width="50%" height="50%"></p>
 
 <h1>TR</h1>
 <p>Çok oyunculu android soru-cevap uygulaması.</p>
@@ -19,5 +21,7 @@ Android multiplayer quiz app using Firebase real-time database.
 <h5>Seviye:</h5>
 <p>Her 100 puan, oyuncuya 1 seviye atlatır.</p>
 
-
-
+<h1>Screenshots</h1>
+<p><img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-201804.png" width="20%" height="20%"> <img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-201810.png" width="20%" height="20%"> <img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-201819.png" width="20%" height="20%"></p>
+<p><img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-201849.png" width="20%" height="20%"> <img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-201950.png" width="20%" height="20%"> <img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-202026.png" width="20%" height="20%"></p>
+<p><img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-202057.png" width="20%" height="20%"> <img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-202113.png" width="20%" height="20%"> <img src="https://github.com/samet-ozkan/Android-Quiz-App-Firebase/blob/main/Screenshots/Screenshot_20220328-202340.png" width="20%" height="20%"></p>
