@@ -1,2 +1,23 @@
 # Android-Quiz-App-Firebase
 Android multiplayer quiz app using Firebase real-time database.
+
+<h1>TR</h1>
+<p>Çok oyunculu android soru-cevap uygulaması.</p>
+
+<h5>2 oyuncunun eşleşmesi:</h5>
+<p>Kullanıcı uygulamaya giriş yaptıktan sonra "play" butonuna basar. Eşleşme bekleyen kullanıcı mevcutsa (müsait oda varsa) 2.oyuncu olarak odaya giriş yapılır. Eğer müsait oda yoksa veya mevcut odaların hepsi doluysa 1.oyuncu olarak yeni oda oluşturulur ve 2.oyuncunun odaya giriş yapması beklenir. Eşleşme gerçekleştikten sonra oyun başlar.</p>
+
+<h5>Oyunun mantığı:</h5>
+<p>Soru havuzundan rastgele 10 soru çekilir. Bu soruların beş tanesi 1.oyuncuya, diğer beş tanesi de 2.oyuncuya sorulur. Oyunun sonunda doğru cevap sayısı fazla olan oyuncu, oyunu kazanır. Oyuncuların doğru cevap sayıları eşitse oyun beraberedir.</p>
+
+<h5>Hamle sırası:</h5>
+<p>Hamle sırası 1.oyuncudan başlar ve 2.oyuncudan devam eder. Hamle yapmak için oyuncuya tanınan süre 30 saniyedir. Eğer oyuncu, 30 saniye içerisinde soruyu yanıtlamazsa hamle sırası rakip oyuncuya geçer.</p>
+
+<h5>Oyun sonu:</h5>
+<p>Oyuncu galibiyet durumunda 20 puan, beraberlik durumunda 10 puan kazanır. Mağlubiyet durumunda ise oyuncu puan kazanamaz.</p>
+
+<h5>Seviye:</h5>
+<p>Her 100 puan, oyuncuya 1 seviye atlatır.</p>
+
+
+
